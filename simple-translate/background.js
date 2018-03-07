@@ -29,7 +29,7 @@ function menuCreate() {
     browser.contextMenus.create({
         id: "translatePage",
         title: browser.i18n.getMessage("translatePageMenu"),
-        contexts: ["all"],
+        contexts: ["page"],
     });
 
     browser.contextMenus.create({
