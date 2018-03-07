@@ -133,7 +133,6 @@ function showResult(results) {
         for (let i = 0; i < results[j].response[0].length; i++) {
             resultText += results[j].response[0][i][0];
         }
-<<<<<<< HEAD
         resultText += "\n";
 
         if (results[j].response[1]) {
@@ -143,14 +142,6 @@ function showResult(results) {
                 const candidates = results[j].response[1][i][1];
                 candidateText += `\n${partsOfSpeech}${partsOfSpeech!="" ? ": " : ""}${candidates.join(", ")}`;
             }
-=======
-        resultText += "\n"; //
-
-        if (results[j].response[1]) {
-          for (let i = 0; i < results[j].response[1].length; i++) {
-            resultText += "\n" + results[j].response[1][i][0] + ": " + results[j].response[1][i][1].join(", ");
-          }
->>>>>>> master
         }
     }
     panel.innerHTML = "<p class=result></p><p class=candidate>"
